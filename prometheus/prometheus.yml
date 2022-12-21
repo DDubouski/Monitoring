@@ -11,7 +11,8 @@ scrape_configs:
     static_configs:
       - targets:
           - 'prometheus:9090'
-          - 'idonotexists:564'
+          - 'http://ec2-3-252-193-23.eu-west-1.compute.amazonaws.com:8080/'
+          - 'http://ec2-3-252-193-23.eu-west-1.compute.amazonaws.com:80/'
 
 alerting:
   alertmanagers:
